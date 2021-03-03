@@ -36,7 +36,9 @@ function mostrarMaiorValor(array){
   return indexMaiorValor;
 }
 
-let valores = [2, 3, 6, 7, 10, 1];
+/*let valores = [2, 3, 6, 7, 10, 1];
 
-console.log(mostrarMaiorValor(valores));
+console.log(mostrarMaiorValor(valores));*/
+
+// Exercicio 3
 
