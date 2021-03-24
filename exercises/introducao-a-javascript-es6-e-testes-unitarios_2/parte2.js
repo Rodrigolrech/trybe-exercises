@@ -17,3 +17,10 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+function addKeyAndValueToObject(object,key,value) {
+  object[key] = value;
+}
+
+addKeyAndValueToObject(lesson2,'turno','manhã');
+console.log(lesson2);
