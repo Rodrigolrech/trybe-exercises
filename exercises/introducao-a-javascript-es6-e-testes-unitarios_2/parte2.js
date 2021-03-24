@@ -21,17 +21,13 @@ const lesson3 = {
 const addKeyValue = (object,key,value) => object[key] = value;
 
 addKeyValue(lesson2,'turno','manhã');
-console.log(lesson2);
-
 
 const listKeysOfObject = (object) => Object.keys(object);
 
-console.log(listKeysOfObject(lesson2));
-
 const objectSize = (object) => Object.keys(object).length;
-
-console.log(objectSize(lesson2));
 
 const listValueOfObject = (object) => Object.values(object);
 
-console.log(listValueOfObject(lesson2));
+const AllLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+
+console.log(AllLessons);
