@@ -18,9 +18,8 @@ const lesson3 = {
   turno: 'noite',
 };
 
-function addKeyAndValueToObject(object,key,value) {
-  object[key] = value;
-}
+const addKeyValue = (object,key,value) => object[key] = value;
 
-addKeyAndValueToObject(lesson2,'turno','manhã');
+addKeyValue(lesson2,'turno','manhã');
 console.log(lesson2);
+
