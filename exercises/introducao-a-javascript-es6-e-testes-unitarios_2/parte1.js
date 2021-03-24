@@ -42,8 +42,18 @@ const customerInfo = (order) => {
 customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  order.name = 'Luiz Silva';
+  order.order.pizza.margherita.amount = 0;
+  order.order.pizza.margherita.price = 0;
+  order.order.pizza.muzzarella = {
+    amount: 1,
+    price: 15
+  }
+  
 
+  order.payment.total = 50,00;
+
+  return console.log(`Olá ${order.name}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ ${order.payment.total},00.`)
 }
 
 orderModifier(order);
