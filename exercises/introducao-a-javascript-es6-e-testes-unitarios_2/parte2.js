@@ -49,4 +49,9 @@ const somaAulas = (obj) => {
   
 }
 
-console.log(somaAulas(lesson2))
+const getValueByNumber = (obj, position) => {
+  const entriesArray = Object.entries(obj)
+  return entriesArray[position][1];
+}
+
+console.log(getValueByNumber(lesson1, 0));
