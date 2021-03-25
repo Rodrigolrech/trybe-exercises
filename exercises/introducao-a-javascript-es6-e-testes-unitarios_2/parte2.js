@@ -54,4 +54,15 @@ const getValueByNumber = (obj, position) => {
   return entriesArray[position][1];
 }
 
-console.log(getValueByNumber(lesson1, 0));
+const verifyPair = (obj, key, value) => {
+  const entriesArray = Object.entries(obj);
+  const keyValueArray = [key,value];
+  console.log(entriesArray);
+  console.log(keyValueArray);
+  if (entriesArray.includes(keyValueArray)) {
+    return truen
+  }
+  return false
+}
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
