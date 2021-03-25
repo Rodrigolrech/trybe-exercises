@@ -18,9 +18,9 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addKeyValue = (object,key,value) => object[key] = value;
+const addKeyValue = (object, key, value) => object[key] = value;
 
-addKeyValue(lesson2,'turno','manhã');
+addKeyValue(lesson2, 'turno', 'manhã');
 
 const listKeysOfObject = (object) => Object.keys(object);
 
@@ -28,6 +28,25 @@ const objectSize = (object) => Object.keys(object).length;
 
 const listValueOfObject = (object) => Object.values(object);
 
-const AllLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+const AllLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
 
-console.log(AllLessons);
+const somaAulas = (obj) => {
+  sum = 0;
+  if (Object.keys(obj).includes('numeroEstudantes')) {
+    for (const key in obj)
+      if (key === 'numeroEstudantes') {
+        sum += obj[key];
+        
+      }
+      return sum;
+  }
+  if (Object.keys(Object.keys(obj).includes('numeroEstudantes'))){
+    for (const key in obj) {
+      sum += obj[key].numeroEstudantes;
+    }
+    return sum;
+  }
+  
+}
+
+console.log(somaAulas(lesson2))
