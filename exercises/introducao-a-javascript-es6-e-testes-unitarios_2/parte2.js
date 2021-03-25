@@ -54,13 +54,30 @@ const getValueByNumber = (obj, position) => {
   return entriesArray[position][1];
 }
 
-const verifyPair = (obj, key, value) => {
+/* const verifyPair = (obj, key, value) => {
   const entriesArray = Object.entries(obj);
   const keyValueArray = [key,value];
+  console.log("entriesArray:")
   console.log(entriesArray);
+  console.log('typeOf entriesArray:')
+  console.log(typeof(entriesArray));
+  console.log('keyValueArray :')
   console.log(keyValueArray);
+  console.log('typeOf keyValueArray :')
+  console.log(typeof(keyValueArray));
   if (entriesArray.includes(keyValueArray)) {
-    return truen
+    return true;
+  }
+  return false;
+}
+
+console.log(verifyPair(lesson3, 'turno', 'noite')); */
+
+const verifyPair = (obj, key, value) => {
+  for (let chave in obj) {
+    if (chave === key && obj[chave] === value) {
+      return true
+    }
   }
   return false
 }
