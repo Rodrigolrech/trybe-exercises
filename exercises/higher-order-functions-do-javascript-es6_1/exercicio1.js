@@ -6,10 +6,9 @@
   }
   return employees;
 }; 
-/* https://pt.stackoverflow.com/questions/382479/removendo-todos-os-espa%C3%A7os-de-uma-string-usando-javascript
-para tirar os espacos e adicionar _ entre os nomes */
+
 const employeeRegister = (fullName) => {
-  const emailName = fullName.replace(/\s/g, '_')
+  const emailName = fullName.toLowerCase().split(' ').join('_');
   return {
     fullName,
     email: `${emailName}@trybe.com`

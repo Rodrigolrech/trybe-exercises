@@ -1,5 +1,6 @@
 const resultadoSorteiro = (numeroApostado) => {
-  const numeroSorteado = Math.floor(Math.random() * 6);
+  const numeroSorteado = Math.floor(Math.random() * 5) + 1;
+  console.log(numeroSorteado);
   console.log(check(numeroApostado, numeroSorteado));
 }
 
