@@ -1,7 +1,7 @@
-const resultadoSorteiro = (numeroApostado) => {
+const resultadoSorteiro = (numeroApostado, func) => {
   const numeroSorteado = Math.floor(Math.random() * 5) + 1;
   console.log(numeroSorteado);
-  console.log(check(numeroApostado, numeroSorteado));
+  console.log(func(numeroApostado, numeroSorteado));
 }
 
 const check = (num1, num2) => {
@@ -10,4 +10,4 @@ const check = (num1, num2) => {
   }
   return 'Tente novamente';
 }
-resultadoSorteiro(5);
+resultadoSorteiro(5, check);

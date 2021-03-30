@@ -7,6 +7,4 @@ const checkAnswer = (gabarito) => {
   }
 }
 
-const resposta = checkAnswer('trybe');
-
-console.log(resposta('trybe'));
+console.log(checkAnswer('trybe')('trybe'));
